@@ -1,0 +1,15 @@
+Fields :
+
+-MapString, SetInteger index stores the word-to-page mapping
+-SetString excludeWords stores the excluded words
+Methods
+-void readFiles() reads the input files and stores the information in appropriate data structures
+-void writeToFile() writes the contents of the index to a file named index.txt
+-static void main(String[] args) creates an instance of the WordIndex class, calls the readFiles()
+ and writeToFile() methods, and handles any exceptions that may occur during their execution
+
+This design separates the data storage (index and excludeWords fields) and the data processing
+logic (readFiles() and writeToFile() methods) into separate classes, making the code more organized 
+and easier to maintain. The main method serves as the entry point for the program and is responsible
+for creating an instance of the WordIndex class, calling the appropriate methods, and handling any 
+exceptions that may occur.
